@@ -14,6 +14,7 @@
         function setThemeClass() {
             document.documentElement.className = Telegram.WebApp.colorScheme;
         }
+
         Telegram.WebApp.onEvent('themeChanged', setThemeClass);
         setThemeClass();
 
@@ -23,8 +24,10 @@
 <body>
 <div id="data"></div>
 <script type="application/javascript">
-    document.getElementById('with_webview_btn').innerHTML = `Ua: ${navigator.userAgent}` +
-        `${JSON.stringify(Telegram.WebApp)}`
+    let data = `Ua: ${navigator.userAgent}` +
+        `${JSON.stringify(Telegram.WebApp)}`;
+    console.log(data);
+    document.getElementById('with_webview_btn').innerHTML += data;
 </script>
 
 </body>
