@@ -16,7 +16,6 @@
         let dataBlock = document.getElementById("data")
         dataBlock.innerText = `Ua: ${navigator.userAgent}` +
             `${JSON.stringify(Telegram.WebApp)}`
-        Telegram.WebApp.
         Telegram.WebApp.onEvent('themeChanged', setThemeClass);
         setThemeClass();
 
@@ -365,8 +364,6 @@
 </head>
 
 <body class="" style="visibility: hidden;">
-
-
 <section id="top_sect" class="second">
     <div id="data"></div>
     <button id="main_btn" onclick="DemoApp.sendMessage('');">Send «Hello, World!»</button>
