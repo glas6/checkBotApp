@@ -27,7 +27,9 @@
     let data = `Ua: ${navigator.userAgent}` +
         `${JSON.stringify(Telegram.WebApp)}`;
     console.log(data);
-    document.getElementById('with_webview_btn').innerHTML += data;
+    let elem = document.getElementById('with_webview_btn');
+    console.log(elem)
+    elem.innerHTML += data;
 </script>
 
 </body>
